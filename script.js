@@ -36,7 +36,7 @@ function clickCell() {
     if (gameboard[cellIndex]!= '' || gamerun==false) {
         return;
     }
-    if(gamerun && computerplayer){
+    if(gamerun && computerplayer==true){
         // console.log('computers move')
         compMove()
     }
@@ -110,7 +110,7 @@ function modeChange() {
 
 function compMove(){
 
-    if(computerplayer && gamerun){
+    if(computerplayer && gamerun==true){
         let index
         
         do{
